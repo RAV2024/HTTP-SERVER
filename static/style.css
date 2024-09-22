@@ -56,7 +56,7 @@ nav a {
 }
 
 nav a:active {
-    color: #778899; /* Оранжевый цвет при нажатии */
+    color: #778899;
 }
 
 .content {
