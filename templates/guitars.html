@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block title %}Гитары{% endblock %}
+
+{% block content %}
+    <h2>Наши гитары</h2>
+    <div class="filter-container">
+        <div class="slider-container">
+            <label for="min_price">Минимальная цена: <span id="min_label">{{ min_price }}</span></label>
+            <input type="range" id="min_price" min="41770" max="67500" step="10" value="{{ min_price }}" oninput="updateMinPrice(this.value)">
+
+            <label for="max_price">Максимальная цена: <span id="max_label">{{ max_price }}</span></label>
+            <input type="range" id="max_price" min="41770" max="67500" step="10" value="{{ max_price }}" oninput="updateMaxPrice(this.value)">
+        </div>
+
+        <button type="button" onclick="filterGuitars()" class="filter-button">Фильтровать</button>
+    </div>
+
+
+    <div class="guitar-gallery">
+        {% for guitar in guitars %}
+            <div class="guitar-item">
+                <img src="/static/{{ guitar.image }}" alt="{{ guitar.name }}" class="guitar-image">
+                <strong class="guitar-name">{{ guitar.name }}</strong>
+                <div class="guitar-info">
+                    <p>Цена: {{ guitar.price }}</p>
+                    <p>Материал верхней деки: {{ guitar['upper deck material'] }}</p>
+                    <p>Материал нижней деки: {{ guitar['material of the lower deck'] }}</p>
+                    <p>Материал грифа: {{ guitar['fingerboard material'] }}</p>
+                    <p>Количество ладов: {{ guitar.frets }}</p>
+                    <p>Звукосниматель: {{ guitar['the pickup'] }}</p>
+                    <p>Струны: {{ guitar.strings }}</p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+     <script>
+        function updateMinPrice(value) {
+            document.getElementById('min_label').innerText = value;
+        }
+
+        function updateMaxPrice(value) {
+            document.getElementById('max_label').innerText = value;
+        }
+
+        function filterGuitars() {
+            const minPrice = document.getElementById('min_price').value;
+            const maxPrice = document.getElementById('max_price').value;
+            const url = `/guitars?min_price=${minPrice}&max_price=${maxPrice}`;
+            window.location.href = url;
+        }
+    </script>
+{% endblock %}

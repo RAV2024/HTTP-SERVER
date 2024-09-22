@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block title %}Контакты{% endblock %}
+
+{% block content %}
+    <div class="container-contact">
+        <h2>Контакты</h2>
+        <p>Вы можете связаться с нами по электронной почте: BATONROUGE@gmail.com</p>
+        <h3>Форма обратной связи</h3>
+        <form action="/send_message" method="POST">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Электронная почта:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Сообщение:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Отправить</button>
+        </form>
+        <div class="social-media">
+            <a href="https://www.facebook.com/batonrougeguitars" target="_blank" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.youtube.com/user/batonrougeguitars" target="_blank" class="social-icon">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://www.instagram.com/baton_rouge_guitars/?hl=de" target="_blank" class="social-icon">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </div>
+{% endblock %}

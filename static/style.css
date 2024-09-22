@@ -1,0 +1,297 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    color: white;
+    background-color: rgb(14, 14, 14);
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px;
+    margin-left: 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+nav li:last-child {
+    margin-right: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+nav a:active {
+    color: #778899; /* Оранжевый цвет при нажатии */
+}
+
+.content {
+    position: relative;
+    height: 130vh;
+    padding-top: 60px;
+}
+
+.black-background {
+    background-color: black;
+    color: white;
+    height: 400px;
+}
+
+.white-background {
+    background-color: white;
+    color: black;
+}
+
+.container{
+    width:100%;
+    overflow-x: hidden;
+    padding: 0;
+}
+
+.overlay-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1100px;
+    height: auto;
+    z-index: 1;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2em;
+    z-index: 2;
+    text-align: center;
+}
+
+.text-container{
+    font-size: 25px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+    margin-top:150px;
+    margin-bottom:100px;
+}
+
+.horizontal-containers {
+    display: flex;
+    font-size: 20px;
+    text-align: start;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.container {
+    width: 45%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    margin: 0 10px;
+}
+
+.guitar-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.guitar-item {
+    text-align: center;
+    margin: 10px 0 100px;
+    flex-basis: calc(33.33% - 20px);
+    position: relative;
+}
+
+.guitar-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.guitar-info {
+    display: none;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ddd;
+    padding: 10px;
+    z-index: 10;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+    width: 200px;
+}
+
+.guitar-item:hover .guitar-info {
+    display: block;
+}
+
+.guitar-name {
+    display: block;
+    margin-top: 10px;
+}
+
+.filter-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+
+
+.filter-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 20px;
+    cursor: pointer;
+    max-width: 120px;
+}
+
+.social-media {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-icon {
+    color: #fff;
+    margin: 0 15px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: #ccc;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+}
+
+h3 {
+    color: #666;
+    text-align: center;
+}
+
+form {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+    resize: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #66afe9;
+    outline: none;
+}
+
+button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #778899;
+}
+
+p {
+    text-align: center;
+    color: #555;
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    padding: 30px 10px;
+    text-align: center;
+    position: relative;
+    clear: both;
+    width: 100%;
+}
+
+.footer-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-content ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-content a {
+    color: white;
+    text-decoration: none;
+}

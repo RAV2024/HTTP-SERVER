@@ -1,0 +1,86 @@
+[
+   {
+        "name": "BATON ROUGE TLM/ACEC Flamed Maple",
+        "price": "64990",
+        "upper deck material": "массив немецкой ели",
+        "material of the lower deck": "огненный клен",
+        "fingerboard material": "клен",
+        "frets": "21",
+        "the pickup": "Cole Clark",
+        "strings": "Elixir",
+        "description": "электроакустическая гитара профессионального уровня в корпусе Dreadnought",
+        "image": "images/flamed.jpg"
+    },
+  {
+        "name": "BATON ROUGE AR61S/ACE",
+        "price": "55990",
+        "upper deck material": "цельная немецкая ель",
+        "material of the lower deck": "экзотическое красное дерево",
+        "fingerboard material": "красное дерево",
+        "frets": "20",
+        "the pickup": "BR-2.1P",
+        "strings": "Elixir",
+        "description": "электроакустическая гитара с катавеем серии Auditorium",
+        "image": "images/AR61S.jpg"
+  },
+  {
+        "name": "BATON ROUGE T22S/ACE",
+        "price": "55335",
+        "upper deck material": "массив немецкой ели",
+        "material of the lower deck": "огненный клен",
+        "fingerboard material": "клен",
+        "frets": "20",
+        "the pickup": "BR-2.1P",
+        "strings": "Elixir",
+        "description": "электроакустическая гитара с катавеем серии Auditorium",
+        "image": "images/T22S.jpg"
+  },
+  {
+        "name": "BATON ROUGE X54S/FJE",
+        "price": "47421",
+        "upper deck material": "цельная ель",
+        "material of the lower deck": "палисандр",
+        "fingerboard material": "красное дерево",
+        "frets": "21",
+        "the pickup": "BR-2.1P",
+        "strings": "Elixir",
+        "description": "электроакустическая гитара в корпусе типа FJ с вырезом",
+        "image": "images/X54S.jpg"
+    },
+  {
+        "name": "BATON ROUGE AR81C/ACE",
+        "price": "67500",
+        "upper deck material": "массив канадского кедра",
+        "material of the lower deck": "массив красного дерева",
+        "fingerboard material": "красного дерево с накладкой из палисандра",
+        "frets": "20",
+        "the pickup": "BR-2.1P",
+        "strings": "Elixir",
+        "description": "Корпус гитары – серии Auditorium, и верхняя дека у него выполнена из массива канадского кедра",
+        "image": "images/AR81c.jpg"
+    },
+  {
+        "name": "BATON ROUGE AR19S/ACE",
+        "price": "41770",
+        "upper deck material": "массив немецкой ели",
+        "material of the lower deck": "красное дерево",
+        "fingerboard material": "красное дерево",
+        "frets": "20",
+        "the pickup": "BR-2.1P",
+        "strings": "Elixir",
+        "description": "электроакустическая гитара с катавеем серии Auditorium",
+        "image": "images/AR19S.jpg"
+    },
+  {
+        "name": "BATON ROUGE X54S/PE-BT",
+        "price": "57300",
+        "upper deck material": "цельная ель",
+        "material of the lower deck": "пао ферро",
+        "fingerboard material": "окуме",
+        "frets": "21",
+        "the pickup": "BR-1",
+        "strings": "Elixir",
+        "description": "электроакустическая гитара профессионального уровня в корпусе Parlor 12",
+        "image": "images/X54parlor.jpg"
+  }
+]
