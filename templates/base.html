@@ -29,5 +29,30 @@
         {% endblock %}
     </main>
     {% include 'footer.html' %}
+    <button id="scrollToTopBtn" class="scroll-to-top" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        window.onscroll = function() {
+            toggleScrollToTopButton();
+        };
+
+        function toggleScrollToTopButton() {
+            const button = document.getElementById("scrollToTopBtn");
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 20) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        }
+
+        function scrollToTop() {
+            window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+            });
+        }
+    </script>
 </body>
 </html>
